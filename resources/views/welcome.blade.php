@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,7 @@
 <body>
     <h1>template Laravel</h1>
     <h2>prova</h2>
+    
 
 <!-- ESEMPIO IMG
 <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> -->
