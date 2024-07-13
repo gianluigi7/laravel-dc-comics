@@ -1,15 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>create</title>
+@extends('layouts.app')
+@section('main')
+<div class="container">
+<h1>crea nuovo fumetto</h1>
+
+    <form action="{{ route('comics.store') }}" method="post"> 
+        @csrf
+        
+        <div class="mb-3">
+            <label class="form-label">Nome Fumetto</label>
+            <input type="text" class="form-control"  name="title">
+        </div>
+        
+    <div class="mb-3">
+        <label class="form-label">Descrizione</label>
+        <input type="text" class="form-control"  name="description">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">link img</label>
+        <input type="text" class="form-control"  name="thumb">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Prezzo</label>
+        <input type="text" class="form-control"  name="price">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Data di uscita</label>
+        <input type="text" class="form-control"  name="sale_date">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Tipo</label>
+        <input type="text" class="form-control"  name="type">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Serie</label>
+        <input type="text" class="form-control"  name="series">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Disegnatore</label>
+        <input type="text" class="form-control"  name="artists">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Scrittore</label>
+        <input type="text" class="form-control"  name="writers">
+    </div>
     
-    @vite('resources/js/app.js')
-</head>
-<body>
-    <h1>template Laravel</h1>
-    <h2>prova</h2>
     
-</body>
-</html>
+    <button class="btn btn-primary">crea fumetto</button>
+</form>
+</div>
+@endsection
