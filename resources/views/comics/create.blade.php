@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('main')
-<div class="container">
 <h1>crea nuovo fumetto</h1>
+<div class="container">
 
     <form action="{{ route('comics.store') }}" method="post"> 
         @csrf

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('main')
-<h1>template Laravel</h1>
-    <h2>prova</h2>
+ <img src="{{ Vite::asset('resources/img/Batman-Robin-DC-Comics.avif') }}" class="batman">
    
 @endsection
