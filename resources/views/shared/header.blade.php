@@ -7,7 +7,7 @@
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="userComics">Your comics</a></li>
+                <li><a href="{{  route('user')  }}">Your comics</a></li>
                 <li><a href="{{  route('comics.create')  }}">Create</a></li>
                 <li><a href="{{  route('comics.index')  }}">Shop</a></li>
             </ul>
