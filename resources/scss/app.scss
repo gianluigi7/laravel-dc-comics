@@ -1,10 +1,8 @@
 
 @import "~bootstrap/scss/bootstrap";
 
-body {
-    background-color: black;
-}
-.container, ul {
+
+ ul {
     display: flex;
 }
 .container {
@@ -45,8 +43,8 @@ a {
 }
 
 main li {
-    width: calc(100% / 6 - 10px);
-    margin: 5px;
+    width: calc(100% / 6 - 24px);
+    margin: 12px;
     font-size: 10px;
     text-transform: uppercase;
     font-weight: 600;
@@ -57,3 +55,18 @@ main li {
         height: 200px;
     }
 }
+header {
+    background-color: white;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    text-align: center;
+    color: white;
+}
+
