@@ -9,7 +9,8 @@ use App\Models\Comic;
 class PageController extends Controller
 {
     public function index() {
-        return view('welcome');
+        $comics = Comic::all();
+        return view('welcome', compact('comics'));
     }
 
     public function user() {

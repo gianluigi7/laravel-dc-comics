@@ -2,9 +2,7 @@
 @import "~bootstrap/scss/bootstrap";
 
 
- ul {
-    display: flex;
-}
+ 
 .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -48,7 +46,6 @@ main li {
     font-size: 10px;
     text-transform: uppercase;
     font-weight: 600;
-    color: white;
     img {
         
         width: 100%;
@@ -69,4 +66,6 @@ h1 {
     text-align: center;
     color: white;
 }
-
+.home-img {
+    height: 200px;
+}

@@ -1,14 +1,18 @@
 
 @extends('layouts.app')
 @section('main')
-    <h1>Ultime uscite</h1>
+    <h1>Best Seller</h1>
     <div class="container">
 
-        <ul>
+        <ul class="d-flex">
             @foreach ($comics->slice(0, 12) as $comic)
             <li>
-            <img src="{{ $comic->thumb }}">
-           <p> <a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a></p>
+                <a href="{{ route('comics.show', $comic->id) }}">
+                    <img src="{{ $comic->thumb }}">
+                </a>
+                <p>
+                {{ $comic->title }}
+    </p>
         </li>
           
             

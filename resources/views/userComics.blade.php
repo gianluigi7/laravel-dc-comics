@@ -5,7 +5,7 @@
 
 <div class="container">
 
-    <ul>
+    <ul class="d-flex">
         @foreach ($comics->slice(12, 20) as $comic)
     <li>
         @if ($comic->thumb) <img src="{{ $comic->thumb }}"> @endif

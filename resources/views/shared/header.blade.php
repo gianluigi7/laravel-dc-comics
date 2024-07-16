@@ -5,7 +5,7 @@
             <img src="{{ Vite::asset('resources/img/DC_Comics_logo.png') }}" alt="">
         </div>
         <nav>
-            <ul>
+            <ul class="d-flex">
                 <li><a href="/">Home</a></li>
                 <li><a href="{{  route('user')  }}">Your comics</a></li>
                 <li><a href="{{  route('comics.create')  }}">Create</a></li>
