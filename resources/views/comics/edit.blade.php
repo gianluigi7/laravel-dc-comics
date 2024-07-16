@@ -48,5 +48,6 @@
     
     <button class="btn btn-primary">Modifica</button>
 </form>
+
 </div>
 @endsection
